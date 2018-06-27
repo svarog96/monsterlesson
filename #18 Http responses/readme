@@ -1,0 +1,7 @@
+node backend.js
+
+npm install express
+npm install cors
+npm install body-parser
+
+node backend.js

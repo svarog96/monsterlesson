@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <!-- <script type="text/javascript" src="prettify.js"></script> -->
+    <link rel="stylesheet" href="prettify.css">
+    <title>Document</title>
+</head>
+<body>
+    <ui-source>
+        <div>
+            <label>Name:</label>
+            <input type="text" ng-model="yourName" placeholder="Enter your name">
+            <hr>
+        </div>
+        <h2>Hello {{yourName}}</h2>
+    </ui-source>
+</body>
+</html>

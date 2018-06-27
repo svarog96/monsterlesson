@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div ng-controller='bookCtrl'>
+        <div ng-controller='angularBookCtrl'>
+            <button ng-click='showBook()'>Show Angular Book</button>
+        </div>
+        <div ng-controller='emberBookCtrl'>
+            <button ng-click='showBook()'>Show Ember Book</button>
+        </div>
+    </div>
+
+    <div ng-controller='cycle'>
+        <div ng-controller='norco'>
+            <input type="button" value='norco' ng-click='go()'>
+
+        </div>
+        <div ng-controller='GT'>
+            <input type="button" value='GT' ng-click='go()'>
+        </div>
+    </div>
+</body>
+</html>

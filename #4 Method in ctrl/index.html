@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div ng-controller='carsCtrl'>
+        <p>Name of this car is {{car}}</p>
+        <p>{{showCar.car()}}</p>
+        <div><button ng-click='setCar("V")'>set new car</button></div>
+    </div>
+</body>
+</html>

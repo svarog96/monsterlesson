@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.5/angular-mocks.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div ng-controller="mainCtrl">
+        <input type="text" ng-model='book.name'>
+        <input type="button" ng-click='addBook(book)' value='Add book'>
+        <div ng-repeat = 'book in books'>
+            {{book.name}}
+        </div>
+    </div>
+</body>
+</html>
